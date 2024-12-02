@@ -10,8 +10,8 @@ from tqdm import tqdm
 register_heif_opener()
 
 # Configuration
-input_directory = "/Users/priesdelly/Desktop/camera/japan-input"
-output_directory = "/Users/priesdelly/Desktop/camera/japan-output"
+input_directory = "/Camera/event1-input"
+output_directory = "/Camera/event1-output"
 max_img_size = 4096
 
 
