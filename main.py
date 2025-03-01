@@ -15,7 +15,7 @@ register_heif_opener()
 input_directory = os.getenv("INPUT_DIRECTORY")
 output_directory = os.getenv("OUTPUT_DIRECTORY")
 max_img_size = int(os.getenv("MAX_IMG_SIZE"))
-
+jpeg_quality = int(os.getenv("JPEG_QUALITY"))
 
 # Setup logging
 def setup_logging():
@@ -70,7 +70,7 @@ def convert_and_resize(input_path: str, output_path: str) -> bool:
 
             # Save as JPG
             image.convert("RGB").save(
-                output_path, "JPEG", quality=95, optimize=True, progressive=True
+                output_path, "JPEG", quality=jpeg_quality, optimize=True, progressive=True
             )
 
             return True

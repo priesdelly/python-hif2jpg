@@ -33,6 +33,7 @@ pipenv install
 INPUT_DIRECTORY="/Camera/event1-input"
 OUTPUT_DIRECTORY="/Camera/event1-output"
 MAX_IMG_SIZE=4096
+JPEG_QUALITY=95
 ```
 2. Run the script:
 ```bash
