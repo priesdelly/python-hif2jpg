@@ -11,49 +11,32 @@ A high-performance Python utility for batch converting HEIF/HEIC images to JPEG 
 
 ## Requirements
 ``` plaintext
-Python 3.7+
+pyenv with Python 3.12.9
+pipenv
+---
 Pillow
 pillow-heif
-tqdm
+colorlog
 ```
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/heif-converter
-cd heif-converter
-pip install -r requirements.txt
+git clone https://github.com/priesdelly/python-hif2jpg
+cd python-hif2jpg
+pipenv install
 ```
 
 ## Usage
 
-1. Configure input/output directories in the script:
-```python
-input_directory = "/Camera/event1-input"
-output_directory = "/Camera/event1-output"
+1. Rename `.env.example` to `.env` and update config
+```env
+INPUT_DIRECTORY="/Camera/event1-input"
+OUTPUT_DIRECTORY="/Camera/event1-output"
 ```
 2. Run the script:
 ```bash
-python main.py
+pipenv run python -m main
 ```
-
-## Logging
-The script logs all operations to both console and conversion.log file.
-
-## Error Handling
-- Failed conversions are logged with error messages
-- Script continues processing remaining files if one fails
-- Summary of failed files provided upon completion
-
-## License
-MIT
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5 .Create a Pull Request
-
 ## Author
 Priesdelly
 
