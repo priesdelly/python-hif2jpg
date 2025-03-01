@@ -1,0 +1,12 @@
+{
+    "cSpell.ignorePaths": [
+        ".gitignore",
+        "launch.json",
+        "Pipfile",
+        "Pipfile.lock",
+        "settings.json"
+    ],
+    "cSpell.words": [
+        "levelname"
+    ]
+}
