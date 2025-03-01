@@ -1,11 +1,11 @@
 # HEIF to JPEG Converter
 A high-performance Python utility for batch converting HEIF/HEIC images to JPEG format with parallel processing capabilities.
 
+
 ## Features
 
 - Parallel image processing using ProcessPoolExecutor
 - Maintains aspect ratio while resizing
-- Progress bar with real-time status
 - Comprehensive logging
 - Configurable image quality and size limits
 
@@ -32,6 +32,7 @@ pipenv install
 ```env
 INPUT_DIRECTORY="/Camera/event1-input"
 OUTPUT_DIRECTORY="/Camera/event1-output"
+MAX_IMG_SIZE=4096
 ```
 2. Run the script:
 ```bash
@@ -41,5 +42,8 @@ pipenv run python -m main
 Priesdelly
 
 ## Acknowledgments
-- pillow-heif library maintainers
-- PIL/Pillow team
+Special thanks to the following teams and libraries that made this project possible:
+
+- [pillow-heif](https://github.com/bigcat88/pillow_heif) library maintainers for providing HEIF/HEIC support in Pillow.
+- [Pillow](https://github.com/python-pillow/Pillow) team for the powerful and easy-to-use image processing library.
+- [colorlog](https://github.com/borntyping/python-colorlog) team for the colorful logging formatter.
