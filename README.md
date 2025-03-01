@@ -28,7 +28,7 @@ pipenv install
 
 ## Usage
 
-1. Rename `.env.example` to `.env` and update config
+1. Rename `.env.example` to `.env` and update the configuration:
 ```env
 INPUT_DIRECTORY="/Camera/event1-input"
 OUTPUT_DIRECTORY="/Camera/event1-output"
